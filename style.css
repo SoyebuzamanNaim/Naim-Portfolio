@@ -182,19 +182,11 @@ body.dark .video-bg {
 
 /* gradient background */
 .gradient-bg {
-/* background: linear-gradient(180deg, #f4f4f4 0%, #ededed 40%, #f8f8f8 100%); */
- background: linear-gradient(180deg, #fffefb 0%, #f4f3f1 50%, #fcfbf9 90%);
-  color: #000;
+  background: linear-gradient(180deg, #eaeaea 0%, #f0f0f0 100%);
 }
 
-  
-
-
 body.dark .gradient-bg {
-background: linear-gradient(180deg, #0b0b0b 0%, #141414 50%, #0b0b0b 100%);
-
-
-
+  background: linear-gradient(180deg, #0a0a0a 0%, #0f0f0f 100%);
 }
 
 /* section title underline */
@@ -360,4 +352,40 @@ body.dark .success-icon {
 body.dark .footer-section {
   background: rgba(20, 20, 20, 0.8);
   border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* project cards */
+.project-card {
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+body.dark .project-card {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.project-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+body.dark .project-card:hover {
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+/* input*/
+
+body.dark .input {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+body.dark .textarea {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
