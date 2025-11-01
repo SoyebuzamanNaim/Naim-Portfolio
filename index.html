@@ -176,7 +176,7 @@
         >
           <!-- c -->
           <div
-            class="tech-item p-4 md:p-6 rounded-2xl shadow-md backdrop-blur-md hover:scale-105 duration-300"
+            class="tech-item p-4 md:p-6 rounded-2xl shadow-md backdrop-blur-md  duration-300"
           >
             <div class="flex flex-col md:flex-row items-center justify-between">
               <div class="flex items-center space-x-3">
@@ -500,6 +500,155 @@
               <a href="#slide1" class="btn btn-circle">❯</a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- my projects section -->
+    <section id="my-projects" class="py-24 gradient-bg">
+      <div class="container mx-auto px-6 md:px-10">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">My Projects</h2>
+          <div
+            class="w-24 md:w-52 h-1 mx-auto"
+            style="
+              background: linear-gradient(
+                90deg,
+                transparent,
+                #1a1a1a,
+                transparent
+              );
+            "
+          ></div>
+        </div>
+
+        <!-- project cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div
+            class="project-card rounded-2xl backdrop-blur-md  duration-300 overflow-hidden"
+          >
+            <div
+              class="h-56 md:h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center"
+            >
+              <img
+                src="assets/images/gadget.png"
+                alt="E-Commerce Platform"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 md:p-8">
+              <h3 class="text-xl md:text-2xl font-bold mb-3">Gadget Heaven</h3>
+              <p class="opacity-70 mb-4">
+                A Frontend e-commerce solution built with React, Context API,
+                React Router, and Tailwind CSS.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="badge badge-primary">React</span>
+                <span class="badge badge-secondary">React Router</span>
+                <span class="badge badge-accent">Tailwind CSS</span>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <a
+                  target="_blank"
+                  href="https://gadget-heaven-soyebuzamannaim.surge.sh/"
+                  class="btn btn-sm text-white shadow-lg main-btn"
+                  >Live Demo</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/SoyebuzamanNaim/b10a8-gadget-heaven-SoyebuzamanNaim"
+                  class="btn btn-sm text-white shadow-lg main-btn"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-card rounded-2xl backdrop-blur-md  duration-300 overflow-hidden"
+          >
+            <div
+              class="h-56 md:h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center"
+            >
+              <img
+                src="assets/images/sms.png"
+                alt="Student management system"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 md:p-8">
+              <h3 class="text-xl md:text-2xl font-bold mb-3">
+                Student Management System
+              </h3>
+              <p class="opacity-70 mb-4">
+                A Java based student management system built with Java and local
+                storage.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="badge badge-primary">Java</span>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <a
+                  target="_blank"
+                  href="https://github.com/SoyebuzamanNaim/Student-Management-System"
+                  class="btn btn-sm text-white shadow-lg main-btn"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="project-card rounded-2xl backdrop-blur-md  duration-300 overflow-hidden"
+          >
+            <div
+              class="h-56 md:h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center"
+            >
+              <img
+                src="assets/images/devjourney.png"
+                alt="Web development Journey"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 md:p-8">
+              <h3 class="text-xl md:text-2xl font-bold mb-3">
+                Web development Journey
+              </h3>
+              <p class="opacity-70 mb-4">
+                A Web development journey built with HTML, CSS, and JavaScript.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="badge badge-primary">HTML</span>
+                <span class="badge badge-secondary">CSS</span>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <a
+                  target="_blank"
+                  href="https://soyebuzamannaim.github.io/web-development-journey/"
+                  class="btn btn-sm text-white shadow-lg main-btn"
+                  >Live Demo</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/SoyebuzamanNaim/web-development-journey"
+                  class="btn btn-sm text-white shadow-lg main-btn"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="text-center mt-12">
+          <a
+            href="https://github.com/SoyebuzamanNaim"
+            target="_blank"
+            class="main-btn text-white font-semibold px-8 py-3 inline-flex items-center gap-2"
+          >
+            View More Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
       </div>
     </section>
