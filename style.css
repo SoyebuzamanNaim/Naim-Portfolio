@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+* {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+}
