@@ -253,3 +253,23 @@ body.dark .social-link {
 body.dark .social-link:hover {
   background: linear-gradient(135deg, #7dbecc 0%, #0a080aa8 100%);
 }
+
+/* success modal */
+.modal-box {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+body.dark .modal-box {
+  background: rgba(20, 20, 20, 0.95);
+}
+
+.success-icon {
+  background: rgba(34, 197, 94, 0.2);
+  color: rgb(34, 197, 94);
+}
+
+body.dark .success-icon {
+  background: rgba(34, 197, 94, 0.3);
+  color: rgb(74, 222, 128);
+}

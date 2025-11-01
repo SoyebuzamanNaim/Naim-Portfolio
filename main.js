@@ -57,3 +57,20 @@ scrollToTopBtn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// contact form submission
+const sendMessageBtn = document.getElementById("sendMessageBtn");
+const contactForm = document.getElementById("contactForm");
+const successModal = document.getElementById("success_modal");
+
+sendMessageBtn.addEventListener("click", () => {
+  if (contactForm.checkValidity()) {
+    // Show success modal
+    successModal.showModal();
+    // Reset form
+    contactForm.reset();
+  } else {
+    // Show validation errors
+    contactForm.reportValidity();
+  }
+});
