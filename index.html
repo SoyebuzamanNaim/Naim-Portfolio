@@ -28,11 +28,368 @@
     ></script>
   </head>
   <body>
+    <header class="sticky top-0 z-50">
+      <div class="navbar px-2 lg:px-8 z-50">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content rounded-box z-50 mt-3 w-52 p-2 shadow-lg border border-black/10 dark:border-white/10"
+            >
+              <li><a href="#home">Home</a></li>
+              <li><a href="#tech-stack">Tech Stack</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#my-projects">My Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <a
+            class="font-extrabold text-3xl pl-2 active:scale-95 style-script-regular"
+            href="#home"
+            >Naim</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="active:scale-95" href="#home">Home</a></li>
 
+            <li>
+              <a class="active:scale-95" href="#tech-stack">Tech Stack</a>
+            </li>
+            <li>
+              <a class="active:scale-95" href="#testimonials">Testimonials</a>
+            </li>
+            <li>
+              <a class="active:scale-95" href="#my-projects">My Projects</a>
+            </li>
+            <li><a class="active:scale-95" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button id="theme-toggle" class="active:scale-95">
+            <i class="fa-solid fa-moon text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </header>
 
+    <!-- hero section -->
+    <section id="home" class="relative z-0">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="video-bg absolute w-full h-full object-cover filter"
+      >
+        <source src="assets/videos/light2.mp4" type="video/mp4" />
+      </video>
 
+      <!-- hero content -->
+      <div
+        class="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-20 lg:gap-10 relative z-0 justify-center px-10 py-20 md:p-20"
+      >
+        <div class="text-center md:text-left space-y-4 md:space-y-6 gap-4">
+          <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">
+            Hi, I'm
+            <span class="text-white style-script-regular drop-shadow-xl"
+              >Naim</span
+            >
+          </h1>
+          <p class="text-gray-100 text-lg md:text-xl drop-shadow-md">
+            <q
+              >A passionate coder driven by curiosity and creativity. I love
+              transforming ideas into meaningful, impactful web experiences.
+            </q>
+          </p>
+          <div class="flex flex-col md:flex-row gap-4">
+            <a
+              href="#contact"
+              class="px-6 py-3 main-btn text-white font-semibold justify-center flex items-center gap-2 rounded-md"
+            >
+              <i class="fa-solid fa-envelope"></i> Let’s Connect
+            </a>
+            <a
+              href="#my-projects"
+              class="px-6 py-3 main-btn text-white font-semibold justify-center flex items-center gap-2 rounded-md"
+            >
+              <i class="fa-solid fa-folder"></i> My Projects
+            </a>
+            <a
+              href="assets/naim-cv.pdf"
+              target="_blank download"
+              class="px-6 py-3 main-btn text-white font-semibold justify-center flex items-center gap-2 rounded-md"
+            >
+              <i class="fa-solid fa-file-pdf"></i> Resume
+            </a>
+          </div>
+        </div>
 
+        <!-- hero image -->
+        <di
+        v class="scale-110">
+          <img
+            src="assets/images/naim.png"
+            alt="Naim Profile Picture"
+            class="hero-img object-cover "
+          />
+        </di>
+      </div>
+    </section>
 
+    <!-- tech stack section -->
+    <section id="tech-stack" class="py-20 gradient-bg">
+      <div class="container mx-auto px-10">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">Tech Stack I Use</h2>
+          <div
+            class="w-24 md:w-52 h-1 mx-auto"
+            style="
+              background: linear-gradient(
+                90deg,
+                transparent,
+                #1a1a1a,
+                transparent
+              );
+            "
+          ></div>
+        </div>
+
+        <!-- tech skills -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
+        >
+          <!-- c -->
+          <div
+            class="tech-item p-4 md:p-6 rounded-2xl shadow-md backdrop-blur-md hover:scale-105 duration-300"
+          >
+            <div class="flex flex-col md:flex-row items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <i class="fa-brands fa-c text-2xl"></i>
+                <h3 class="text-lg font-semibold">C</h3>
+              </div>
+              <div class="text-lg font-extrabold text-center lg:text-left">
+                85%
+              </div>
+            </div>
+            <progress
+              class="progress progress-accent w-full"
+              value="85"
+              max="100"
+            ></progress>
+          </div>
+          <!-- c++ -->
+          <div
+            class="tech-item p-4 md:p-6 rounded-2xl shadow-md backdrop-blur-md hover:scale-105 duration-300"
+          >
+            <div class="flex flex-col md:flex-row items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <i class="fa-brands fa-c++ text-lg">C++</i>
+                <h3 class="text-lg font-semibold">C++</h3>
+              </div>
+              <div class="text-lg font-extrabold text-center lg:text-left">
+                90%
+              </div>
+            </div>
+            <progress
+              class="progress progress-accent w-full"
+              value="90"
+              max="100"
+            ></progress>
+          </div>
+          <!-- java -->
+          <div
+            class="tech-item p-4 md:p-6 rounded-2xl shadow-md backdrop-blur-md hover:scale-105 duration-300"
+          >
+            <div class="flex flex-col md:flex-row items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <i class="fa-brands fa-java text-lg"></i>
+                <h3 class="text-lg font-semibold">Java</h3>
+              </div>
+              <div class="text-lg font-extrabold text-center lg:text-left">
+                60%
+              </div>
+            </div>
+            <progress
+              class="progress progress-accent w-full"
+              value="60"
+              max="100"
+            ></progress>
+          </div>
+          <!-- GitHub -->
+          <div
+            class="tech-item p-4 md:p-6 rounded-2xl shadow-md backdrop-blur-md hover:scale-105 duration-300"
+          >
+            <div class="flex flex-col md:flex-row items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <i class="fa-brands fa-github text-lg"></i>
+                <h3 class="text-lg font-semibold">GitHub</h3>
+              </div>
+              <div class="text-lg font-extrabold text-center lg:text-left">
+                45%
+              </div>
+            </div>
+            <progress
+              class="progress progress-accent w-full"
+              value="45"
+              max="100"
+            ></progress>
+          </div>
+          <!-- firebase -->
+          <div
+            class="tech-item p-4 md:p-6 rounded-2xl shadow-md backdrop-blur-md hover:scale-105 duration-300"
+          >
+            <div class="flex flex-col md:flex-row items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <i class="fa-brands fa-firebase text-lg"></i>
+                <h3 class="text-lg font-semibold">HTML5</h3>
+              </div>
+              <div class="text-lg font-extrabold text-center lg:text-left">
+                50%
+              </div>
+            </div>
+            <progress
+              class="progress progress-accent w-full"
+              value="50"
+              max="100"
+            ></progress>
+          </div>
+
+          <!-- html -->
+          <div
+            class="tech-item p-4 md:p-6 rounded-2xl shadow-md backdrop-blur-md hover:scale-105 duration-300"
+          >
+            <div class="flex flex-col md:flex-row items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <i class="fa-brands fa-html5 text-2xl"></i>
+                <h3 class="text-lg font-semibold">HTML5</h3>
+              </div>
+              <div class="text-lg font-extrabold text-center lg:text-left">
+                90%
+              </div>
+            </div>
+            <progress
+              class="progress progress-accent w-full"
+              value="90"
+              max="100"
+            ></progress>
+          </div>
+          <!-- css -->
+          <div
+            class="tech-item p-4 md:p-6 rounded-2xl shadow-md backdrop-blur-md hover:scale-105 duration-300"
+          >
+            <div class="flex flex-col md:flex-row items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <i class="fa-brands fa-css3 text-2xl"></i>
+                <h3 class="text-lg font-semibold">CSS3</h3>
+              </div>
+              <div class="text-lg font-extrabold text-center lg:text-left">
+                70%
+              </div>
+            </div>
+            <progress
+              class="progress progress-accent w-full"
+              value="70"
+              max="100"
+            ></progress>
+          </div>
+          <!-- javascript -->
+          <div
+            class="tech-item p-4 md:p-6 rounded-2xl shadow-md backdrop-blur-md hover:scale-105 duration-300"
+          >
+            <div class="flex flex-col md:flex-row items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <i class="fa-brands fa-js text-2xl"></i>
+                <h3 class="text-lg font-semibold">JS</h3>
+              </div>
+              <div class="text-lg font-extrabold text-center lg:text-left">
+                65%
+              </div>
+            </div>
+            <progress
+              class="progress progress-accent w-full"
+              value="65"
+              max="100"
+            ></progress>
+          </div>
+          <!-- react -->
+          <div
+            class="tech-item p-4 md:p-6 rounded-2xl shadow-md backdrop-blur-md hover:scale-105 duration-300"
+          >
+            <div class="flex flex-col md:flex-row items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <i class="fa-brands fa-react text-2xl"></i>
+                <h3 class="text-lg font-semibold">React</h3>
+              </div>
+              <div class="text-lg font-extrabold text-center lg:text-left">
+                60%
+              </div>
+            </div>
+            <progress
+              class="progress progress-accent w-full"
+              value="60"
+              max="100"
+            ></progress>
+          </div>
+          <!-- tailwind css -->
+          <div
+            class="tech-item p-4 md:p-6 rounded-2xl shadow-md backdrop-blur-md hover:scale-105 duration-300"
+          >
+            <div class="flex flex-col md:flex-row items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <i class="fa-brands fa-css3 text-2xl"></i>
+                <h3 class="text-lg font-semibold">Tailwind</h3>
+              </div>
+              <div class="text-lg font-extrabold text-center lg:text-left">
+                80%
+              </div>
+            </div>
+            <progress
+              class="progress progress-accent w-full"
+              value="80"
+              max="100"
+            ></progress>
+          </div>
+          <!-- vite -->
+          <div
+            class="tech-item p-4 md:p-6 rounded-2xl shadow-md backdrop-blur-md hover:scale-105 duration-300"
+          >
+            <div class="flex flex-col md:flex-row items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <i class="fa-brands fa-v text-2xl"></i>
+                <h3 class="text-lg font-semibold">Vite</h3>
+              </div>
+              <div class="text-lg font-extrabold text-center lg:text-left">
+                50%
+              </div>
+            </div>
+            <progress
+              class="progress progress-accent w-full"
+              value="50"
+              max="100"
+            ></progress>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- script -->
 
     <script src="main.js"></script>
   </body>

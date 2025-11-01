@@ -1,12 +1,215 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
 * {
   scroll-behavior: smooth;
 }
+
 body {
-font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .signature-font {
   font-family: "Momo Signature", cursive;
 }
 
+.style-script-regular {
+  font-family: "Momo Signature", cursive;
+}
+/* light  */
+body {
+  background-color: #eaeaea;
+  color: #0f0f0f;
+}
+
+/* dark  */
+body.dark {
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+}
+
+/* navbar  */
+
+.navbar {
+  background-color:  rgba(255, 255, 255, 0.482);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  font-weight: 800;
+}
+  body.dark .navbar {
+  background-color: rgba(0, 0, 0, 0.531);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-weight: 800;
+}
+.navbar .menu a {
+  position: relative;
+  text-decoration: none;
+}
+
+.navbar .menu a::after {
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background: #0f0f0f;
+  opacity: 0.6;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.navbar .menu a:hover::after {
+  transform: scaleX(1);
+}
+
+body.dark .navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* button  */
+.main-btn {
+  background: linear-gradient(135deg, #0f0f0f 0%, #3a3a3a 100%);
+  border: 1px solid #2a2a2a;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.main-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .main-btn {
+  background: linear-gradient(135deg, #f5f5f5 0%, #979797 100%);
+  border: 1px solid #d5d5d5;
+  color: #0a0a0a;
+}
+
+body.dark .main-btn:hover {
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* tech item cards */
+.tech-item {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+body.dark .tech-item {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+body.dark .tech-item:hover {
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* progress bar  */
+.progress-accent {
+  background-color: #e5e5e5;
+}
+
+.progress-accent::-webkit-progress-value {
+  background: linear-gradient(90deg, #e0e0e0, #3a3a3a);
+}
+
+.progress-accent::-moz-progress-bar {
+  background: linear-gradient(90deg, #0f0f0f, #3a3a3a);
+}
+
+body.dark .progress-accent {
+  background-color: #2a2a2a;
+}
+
+body.dark .progress-accent::-webkit-progress-value {
+  background: linear-gradient(90deg, #262626, #d5d5d5);
+}
+
+body.dark .progress-accent::-moz-progress-bar {
+  background: linear-gradient(90deg, #f5f5f5, #d5d5d5);
+}
+
+/* theme toggle button */
+#theme-toggle {
+  padding: 0.75rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  font-size: 1.25rem;
+}
+
+#theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body.dark #theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* hero section */
+.hero-img {
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+   
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+body.dark .hero-img {
+  filter: drop-shadow(0 20px 40px rgba(255, 255, 255, 0.15));
+}
+
+/* video background overlay */
+.video-bg {
+  filter: brightness(0.7);
+  scale: 1.1 1;
+}
+
+body.dark .video-bg {
+  filter: brightness(0.4);
+}
+
+/* gradient background */
+.gradient-bg {
+  background: linear-gradient(180deg, #eaeaea 0%, #f0f0f0 100%);
+}
+
+body.dark .gradient-bg {
+  background: linear-gradient(180deg, #0a0a0a 0%, #0f0f0f 100%);
+}
+
+/* dropdown menu items */
+.dropdown-content {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+body.dark .dropdown-content {
+  background: rgba(20, 20, 20, 0.95) !important;
+}
+
+/* menu items */
+.menu a {
+  transition: all 0.2s ease;
+}
+
+.menu a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body.dark .menu a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
