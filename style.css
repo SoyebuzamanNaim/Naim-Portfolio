@@ -182,11 +182,19 @@ body.dark .video-bg {
 
 /* gradient background */
 .gradient-bg {
-  background: linear-gradient(180deg, #eaeaea 0%, #f0f0f0 100%);
+/* background: linear-gradient(180deg, #f4f4f4 0%, #ededed 40%, #f8f8f8 100%); */
+ background: linear-gradient(180deg, #fffefb 0%, #f4f3f1 50%, #fcfbf9 90%);
+  color: #000;
 }
 
+  
+
+
 body.dark .gradient-bg {
-  background: linear-gradient(180deg, #0a0a0a 0%, #0f0f0f 100%);
+background: linear-gradient(180deg, #0b0b0b 0%, #141414 50%, #0b0b0b 100%);
+
+
+
 }
 
 /* section title underline */

@@ -68,7 +68,7 @@
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a class="active:scale-95" href="#home">Home</a></li>
+            <li><a class="active:scale-95 " href="#home">Home</a></li>
             <li><a class="active:scale-95" href="#about">About</a></li>
             <li>
               <a class="active:scale-95" href="#tech-stack">Tech Stack</a>
@@ -134,8 +134,8 @@
             </a>
             <a
               href="assets/naim-cv.pdf"
-              target="_blank download"
-              class="px-6 py-3 main-btn text-white font-semibold justify-center flex items-center gap-2 rounded-md"
+              target="_blank " download
+              class=" px-6 py-3 main-btn text-white font-semibold justify-center flex items-center gap-2 rounded-md"
             >
               <i class="fa-solid fa-file-pdf"></i> Resume
             </a>
@@ -152,6 +152,66 @@
         </div>
       </div>
     </section>
+
+    <!-- About Me Section -->
+   <section id="about" class="py-20 gradient-bg">
+     <div class="container mx-auto px-10">
+       <div class="text-center mb-16">
+         <h2 class="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
+         <div class="w-24 md:w-52 h-1 mx-auto section-underline"></div>
+       </div>
+
+
+       <div
+         class=" mx-auto about-card p-8 md:p-10 rounded-2xl backdrop-blur-md"
+       >
+         <!-- Tab Buttons -->
+         <div class="flex flex-wrap justify-center gap-4 mb-8">
+           <button
+             id="btn-experience"
+             class="tab-btn active-btn px-6 py-3 rounded-lg font-semibold transition-all duration-300"
+           >
+             <i class="fa-solid fa-briefcase mr-2"></i>Experience
+           </button>
+            <button
+             id="btn-education" 
+             class="tab-btn px-6 py-3 rounded-lg font-semibold transition-all duration-300"
+           >
+             <i class="fa-solid fa-graduation-cap mr-2"></i>Education
+           </button>
+           <button
+             id="btn-certification"
+             class="tab-btn px-6 py-3 rounded-lg font-semibold transition-all duration-300"
+           >
+             <i class="fa-solid fa-certificate mr-2"></i>Certification
+           </button>
+           <button
+             id="btn-cp"
+             class="tab-btn px-6 py-3 rounded-lg font-semibold transition-all duration-300"
+           >
+             <i class="fa-solid fa-code mr-2"></i>Competitive Programming
+           </button>
+            <button
+             id="btn-hobbies" 
+             class="tab-btn px-6 py-3 rounded-lg font-semibold transition-all duration-300"
+           >
+             <i class="fa-solid fa-palette mr-2"></i>Hobbies
+           </button>
+           
+          
+         </div>
+
+
+         <!-- Content Container -->
+         <div
+           id="info"
+           class="text-center text-lg leading-relaxed transition-all duration-300"
+         ></div>
+       </div>
+     </div>
+   </section>
+
+
 
     <!-- tech stack section -->
     <section id="tech-stack" class="py-20 gradient-bg">
@@ -380,7 +440,7 @@
     </section>
     <!-- testimonials  -->
     <section id="testimonials" class="py-20 gradient-bg">
-      <div class="container mx-auto px-10">
+      <div class="container mx-auto ">
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-5xl font-bold mb-4">Testimonials</h2>
           <div class="w-24 md:w-52 h-1 mx-auto section-underline"></div>
@@ -627,7 +687,7 @@
         </div>
 
         <div
-          class="flex flex-col-reverse md:grid md:grid-cols-2 gap-12 max-w-6xl mx-auto"
+          class="flex flex-col-reverse md:grid md:grid-cols-2 gap-12  mx-auto"
         >
           <!-- Contact Info -->
           <div class="flex flex-col justify-between space-y-8">
