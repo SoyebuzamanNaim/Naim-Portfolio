@@ -198,6 +198,75 @@ body.dark .section-underline {
   background: linear-gradient(90deg, transparent, #f5f5f5, transparent);
 }
 
+/* about section */
+.about-card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+body.dark .about-card {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* tab buttons */
+.tab-btn {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: inherit;
+}
+
+.tab-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.active-btn {
+  background: linear-gradient(135deg, #0f0f0f 0%, #3a3a3a 100%);
+  color: white;
+  border: 1px solid #2a2a2a;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+body.dark .tab-btn {
+  background: rgba(20, 20, 20, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+body.dark .tab-btn:hover {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .active-btn {
+  background: linear-gradient(135deg, #f5f5f5 0%, #979797 100%);
+  color: #0a0a0a;
+  border: 1px solid #d5d5d5;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* content animation */
+#info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#info.opacity-0 {
+  opacity: 0;
+}
+
+#info.translate-y-2 {
+  transform: translateY(0.5rem);
+}
+
+#info.opacity-100 {
+  opacity: 1;
+}
+
+#info.translate-y-0 {
+  transform: translateY(0);
+}
+
 /* testimonials */
 .testimonial-card {
   background: rgba(255, 255, 255, 0.8);

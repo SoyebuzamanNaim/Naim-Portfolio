@@ -59,18 +59,43 @@ scrollToTopBtn.addEventListener("click", () => {
 });
 
 // contact form submission
-const sendMessageBtn = document.getElementById("sendMessageBtn");
 const contactForm = document.getElementById("contactForm");
 const successModal = document.getElementById("success_modal");
 
-sendMessageBtn.addEventListener("click", () => {
-  if (contactForm.checkValidity()) {
-    // Show success modal
-    successModal.showModal();
-    // Reset form
-    contactForm.reset();
-  } else {
-    // Show validation errors
-    contactForm.reportValidity();
+contactForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(contactForm);
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+  const originalButtonText = submitButton.innerHTML;
+
+  // Show loading state
+  submitButton.disabled = true;
+  submitButton.innerHTML =
+    '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      // Show success modal
+      successModal.showModal();
+      // Reset form
+      contactForm.reset();
+    } else {
+      throw new Error("Form submission failed");
+    }
+  } catch (error) {
+    alert("Oops! Something went wrong. Please try again later.");
+    console.error("Form submission error:", error);
+  } finally {
+    // Restore button state
+    submitButton.disabled = false;
+    submitButton.innerHTML = originalButtonText;
   }
 });

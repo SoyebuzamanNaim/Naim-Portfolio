@@ -53,6 +53,7 @@
               class="menu menu-sm dropdown-content rounded-box z-50 mt-3 w-52 p-2 shadow-lg border border-black/10 dark:border-white/10"
             >
               <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
               <li><a href="#tech-stack">Tech Stack</a></li>
               <li><a href="#testimonials">Testimonials</a></li>
               <li><a href="#my-projects">My Projects</a></li>
@@ -68,7 +69,7 @@
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li><a class="active:scale-95" href="#home">Home</a></li>
-
+            <li><a class="active:scale-95" href="#about">About</a></li>
             <li>
               <a class="active:scale-95" href="#tech-stack">Tech Stack</a>
             </li>
@@ -497,9 +498,7 @@
           <div
             class="project-card rounded-2xl backdrop-blur-md duration-300 overflow-hidden"
           >
-            <div
-              class="h-56 md:h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center"
-            >
+            <div class="h-56 md:h-48 flex items-center justify-center">
               <img
                 src="assets/images/gadget.png"
                 alt="E-Commerce Platform"
@@ -537,9 +536,7 @@
           <div
             class="project-card rounded-2xl backdrop-blur-md duration-300 overflow-hidden"
           >
-            <div
-              class="h-56 md:h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center"
-            >
+            <div class="h-56 md:h-48 flex items-center justify-center">
               <img
                 src="assets/images/sms.png"
                 alt="Student management system"
@@ -572,9 +569,7 @@
           <div
             class="project-card rounded-2xl backdrop-blur-md duration-300 overflow-hidden"
           >
-            <div
-              class="h-56 md:h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center"
-            >
+            <div class="h-56 md:h-48 flex items-center justify-center">
               <img
                 src="assets/images/devjourney.png"
                 alt="Web development Journey"
@@ -709,11 +704,23 @@
 
           <!-- Contact Form -->
           <div class="contact-form p-8 rounded-2xl backdrop-blur-md">
-            <form id="contactForm" class="space-y-6">
+            <form
+              id="contactForm"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="space-y-6"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="390be4d3-ba0f-49c5-aa4c-3a10bd1b9c4e"
+              />
+
               <div>
                 <label class="block text-sm font-medium mb-2">Name</label>
                 <input
                   type="text"
+                  name="name"
                   class="input input-bordered w-full"
                   placeholder="Your Name"
                   required
@@ -728,25 +735,18 @@
                   required
                 />
               </div>
-              <div>
-                <label class="block text-sm font-medium mb-2">Subject</label>
-                <input
-                  type="text"
-                  class="input input-bordered w-full"
-                  placeholder="Project Inquiry"
-                  required
-                />
-              </div>
+
               <div>
                 <label class="block text-sm font-medium mb-2">Message</label>
                 <textarea
+                  name="message"
                   class="textarea textarea-bordered w-full h-32"
                   placeholder="Tell me about your project..."
                   required
                 ></textarea>
               </div>
               <button
-                type="button"
+                type="submit"
                 id="sendMessageBtn"
                 class="main-btn text-white font-semibold w-full px-6 py-3"
               >
