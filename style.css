@@ -273,3 +273,14 @@ body.dark .success-icon {
   background: rgba(34, 197, 94, 0.3);
   color: rgb(74, 222, 128);
 }
+
+/* footer */
+.footer-section {
+  background: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.dark .footer-section {
+  background: rgba(20, 20, 20, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
