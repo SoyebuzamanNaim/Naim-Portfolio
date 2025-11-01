@@ -48,3 +48,12 @@ btn.addEventListener("click", () => {
     updateThemeElements(false);
   }
 });
+
+// scroll to top button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

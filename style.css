@@ -32,12 +32,12 @@ body.dark {
 /* navbar  */
 
 .navbar {
-  background-color:  rgba(255, 255, 255, 0.482);
+  background-color: rgba(255, 255, 255, 0.482);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
   font-weight: 800;
 }
-  body.dark .navbar {
+body.dark .navbar {
   background-color: rgba(0, 0, 0, 0.531);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -49,7 +49,6 @@ body.dark {
 }
 
 .navbar .menu a::after {
-  
   position: absolute;
   left: 0;
   right: 0;
@@ -59,7 +58,7 @@ body.dark {
   opacity: 0.6;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar .menu a:hover::after {
@@ -161,7 +160,6 @@ body.dark #theme-toggle:hover {
 .hero-img {
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
   transition: transform 0.3s ease;
-   
 }
 
 .hero-img:hover {
@@ -191,25 +189,28 @@ body.dark .gradient-bg {
   background: linear-gradient(180deg, #0a0a0a 0%, #0f0f0f 100%);
 }
 
-/* dropdown menu items */
-.dropdown-content {
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(10px);
+/* testimonials */
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.8);
+border-radius: 15px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
-body.dark .dropdown-content {
-  background: rgba(20, 20, 20, 0.95) !important;
+.testimonial-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.2);
+ translate: scale(1.02);
+  transition: all 0.3s ease;
 }
 
-/* menu items */
-.menu a {
-  transition: all 0.2s ease;
+body.dark .testimonial-card {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
 }
 
-.menu a:hover {
-  background: rgba(0, 0, 0, 0.05);
-}
-
-body.dark .menu a:hover {
-  background: rgba(255, 255, 255, 0.1);
+body.dark .testimonial-card:hover {
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
 }
