@@ -196,7 +196,10 @@ const content = {
       </h3>
       <p class="mb-3">Solved <strong>500+</strong> problems on <a class="text-lime-600 hover:text-lime-900" href="https://codeforces.com/profile/naiminator" target="_blank">Codeforces</a>, <a class="text-lime-600 hover:text-lime-900" href="https://leetcode.com/u/soyebuzamannaim/" target="_blank">LeetCode</a>, and <a class="text-lime-600 hover:text-lime-900" href="https://atcoder.jp/users/SoyebuzamanNaim" target="_blank">AtCoder</a>.</p>
       <p class="mb-3 ">Codeforces Max Rating: <strong>Newbie (1123)</strong></p><br>
+      
       <p class="opacity-70"> <i class="fa-solid fa-medal"></i> 3rd place in University Intra Programming Contest 2024</p>
+      <p class="opacity-70"> <i class="fa-solid fa-medal"></i> 1st place at SEUCC Monthly Programming Contest 003! 🏆 2024</p>
+       <p class="opacity-70"> <i class="fa-solid fa-medal"></i> 2nd Place at SEUCC Monthly Programming Contest 002 🏆 2024</p>
     </div>
   `,
 
