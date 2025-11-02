@@ -173,7 +173,7 @@ body.dark .hero-img {
 /* video background overlay */
 .video-bg {
   filter: brightness(0.7);
-  scale: 1.1 1;
+  
 }
 
 body.dark .video-bg {
