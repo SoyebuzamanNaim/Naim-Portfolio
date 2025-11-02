@@ -39,7 +39,7 @@ A modern, responsive portfolio website showcasing my projects, skills, and profe
 
 ## 🌐 Live Demo
 
-Visit the live portfolio: [https://soyebuzamannaim.github.io/Naim-Portfolio/]
+Visit the live portfolio: [https://soyebuzamannaim.github.io/Naim-Portfolio/](https://soyebuzamannaim.github.io/Naim-Portfolio/)
 
 ## 📝 Assignment Note
 
@@ -50,7 +50,7 @@ This portfolio was created as a **project assignment** for my Java course. While
 **Soyebuzaman Naim**
 
 - GitHub: [@SoyebuzamanNaim](https://github.com/SoyebuzamanNaim)
-- LinkedIn: [Your LinkedIn Profile]
+- LinkedIn: [Md Soyebuzaman Naim](https://www.linkedin.com/in/md-soyebuzaman-naim/)
 
 
 
