@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-> **📋 Project Assignment** - This is a project assignment for my Java course. Despite being an assignment, I've put my heart and soul into creating a professional, polished portfolio website.
+> **📋 Project Assignment** - This is a assignment for my Java course. Despite being an assignment, I've put my heart and soul into creating a professional, polished portfolio website.
 
 A modern, responsive portfolio website showcasing my projects, skills, and professional experience.
 
@@ -41,9 +41,6 @@ A modern, responsive portfolio website showcasing my projects, skills, and profe
 
 Visit the live portfolio: [https://soyebuzamannaim.github.io/Naim-Portfolio/](https://soyebuzamannaim.github.io/Naim-Portfolio/)
 
-## 📝 Assignment Note
-
-This portfolio was created as a **project assignment** for my Java course. While it started as coursework, I've invested significant effort and attention to detail to create a professional and polished portfolio that truly represents my work and skills.
 
 ## 👤 Author
 
